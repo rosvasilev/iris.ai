@@ -1,0 +1,24 @@
+{
+  "name": "irisai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev-project": "npx playwright test --project=dev",
+    "chromium-project": "npx playwright test --project=chromium",
+    "dev-env": "DEV=1 npx playwright test --project=chromium",
+    "allure": "allure generate ./allure-results -o ./allure-report --clean && allure open ./allure-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "@playwright/test": "^1.46.1",
+    "@types/node": "^22.5.0",
+    "allure-playwright": "^3.0.0-beta.11"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
