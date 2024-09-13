@@ -14,7 +14,7 @@ const builderForm = {
 
 test.describe('Fill get started forms', ()=>{
   
-  test("Fill AI Builders form", async ({ aiBuildersPage }) => {
+  test("Fill AI Builders form and verify that the Submit button is enabled", async ({ aiBuildersPage }) => {
 
     await aiBuildersPage.clickGetStarted();
     await aiBuildersPage.selectFormOption(aiBuildersPage.aiBuildersOption);
@@ -31,7 +31,7 @@ test.describe('Fill get started forms', ()=>{
   });
 
 
-  test("Fill Enterprise Solutions form", async ({ aiBuildersPage }) => {
+  test("Fill Enterprise Solutions form and verify that the Submit button is enabled", async ({ aiBuildersPage }) => {
 
     await aiBuildersPage.clickGetStarted();
     await aiBuildersPage.selectFormOption(aiBuildersPage.enterpriseSolutionOption);
@@ -48,7 +48,7 @@ test.describe('Fill get started forms', ()=>{
   });
 
 
-  test("Fill for R&D teams form", async ({ aiBuildersPage }) => {
+  test("Fill for R&D teams form and verify that the Submit button is enabled", async ({ aiBuildersPage }) => {
 
     await aiBuildersPage.clickGetStarted();
     await aiBuildersPage.selectFormOption(aiBuildersPage.forRnDteamsOption);

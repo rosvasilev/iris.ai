@@ -1,7 +1,7 @@
 
 import { test } from "../../fixtures/test-options";
 
- test('Register for research newsletetr', async ({solutionsPage})=>{
+ test('Verify solutions options text', async ({solutionsPage})=>{
   
     await solutionsPage.clickHeaderOption("2");
     await solutionsPage.verifySolutionText("1", "Full privacy and security")
